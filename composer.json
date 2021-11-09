@@ -12,7 +12,8 @@
         "pkurg/spacebootstrap5-theme": "dev-master",
         "rainlab/builder-plugin": "^1.1",
         "vojtasvoboda/twigextensions-plugin": "^1.2",
-        "carlosrgzm/cookieconsent-plugin": "^1.0"
+        "carlosrgzm/cookieconsent-plugin": "^1.0",
+        "rainlab/user-plugin": "^1.6"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.0|^9.0",
