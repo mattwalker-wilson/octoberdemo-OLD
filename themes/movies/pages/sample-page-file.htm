@@ -1,0 +1,32 @@
+url = "/sample-page-url"
+layout = "default"
+title = "sample page title"
+description = "backend description goes here."
+meta_description = "this is the meta decription part"
+==
+<h1>Samples of TWIG Filters</h1>
+
+<ul>
+<li>{{ 'this.page.layout = '~this.page.layout }}</li>
+
+<li>{{ 'this.page.id = '~this.page.id }}</li>
+
+<li>{{ 'this.page.title = '~this.page.title }}</li>
+
+<li>{{ 'this.page.url = '~this.page.url }}</li>
+
+<li>{{ 'this.page.description = '~this.page.description }}</li>
+
+<li>{{ 'this.page.meta_description = '~this.page.meta_description }}</li>
+
+<li>{{ 'this.page.meta_title = '~this.page.meta_title }}</li>
+
+</ul>
+
+{% if (this.page.meta_title|length > 2) %}
+    <p>this page has a meta_title which is : <br />'{{ this.page.meta_title }} '</p>
+{% else %}
+    <p>No meta title - using title instead: <br/>'{{ this.page.title }}' </p>
+{% endif %}
+
+<h2>This page is {{ this.page.id }} and the title is '{{ 'title-'~this.page.title}}'</h2>
